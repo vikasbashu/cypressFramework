@@ -1,0 +1,11 @@
+{
+    "admin_site": "http://localhost:5173/",
+    "credentials": {
+        "username": "Schebrina",
+        "password": "admin123"
+    },
+    "invalid_credentials": {
+        "username": "Sonata",
+        "password": "elantra@123$"
+    }
+}

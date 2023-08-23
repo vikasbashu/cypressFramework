@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_with_allure": "cypress run --env allure=true --browser firefox --spec cypress/e2e/UI-testing-random-sites/nopCommerceDemo.cy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^12.17.2"
+    "cypress": "^12.17.2",
+    "cypress-parallel": "^0.13.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "allure-commandline": "^2.23.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }

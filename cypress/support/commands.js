@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// Custom command to to do login on course bay app
+Cypress.Commands.add("loginOnCourseBay", (username, password)=>{
+    cy.get('.MuiTypography-h5').contains("Sign in");
+    cy.get('#email').clear().type(username);
+    cy.get('#password').clear().type(password);
+    cy.get('.PrivateSwitchBase-input').click();
+    cy.get('.MuiButton-root').contains('Sign In').click();
+});
+// Cutom command to verify landing page items
+Cypress.Commands.add("landingPageItems", ()=>{
+    cy.get('.MuiTypography-h2').contains("The Learning Curve");
+    cy.get('.MuiButton-contained').contains("Login");
+    cy.get('.MuiButton-outlined').contains("Register");
+    cy.get('.MuiTypography-h5 > .MuiTypography-root').contains("info@thelearningcurve.com");
+});
+
+// command to click button on nop
+Cypress.Commands.add("clickNopButtons", (buttonTitle)=>{
+    cy.get('.frontend-button > .button-text').should("have.text", buttonTitle).click();
+});
