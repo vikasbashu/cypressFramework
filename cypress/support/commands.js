@@ -44,3 +44,10 @@ Cypress.Commands.add("landingPageItems", ()=>{
 Cypress.Commands.add("clickNopButtons", (buttonTitle)=>{
     cy.get('.frontend-button > .button-text').should("have.text", buttonTitle).click();
 });
+
+// command to compare title case string
+Cypress.Commands.add("toTitleCase", (temp_str)=>{
+    return temp_str.replace(/\w\S*/g, (str)=>{
+        return str[0].toUpperCase() + str.slice(1).toLowerCase();
+    })
+});

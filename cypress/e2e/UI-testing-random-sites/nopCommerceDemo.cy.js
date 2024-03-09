@@ -47,5 +47,6 @@ describe("Store demo sanity", ()=>{
         //     cy.get(".topic-block-title > h2").should("have.text", "Welcome to our store");
         // });
         cy.get(".topic-block-title > h2").should("have.text", "Welcome to our store");
+        cy.type(`enter`);
     });
 });

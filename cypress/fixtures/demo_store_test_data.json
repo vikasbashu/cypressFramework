@@ -1,0 +1,9 @@
+{
+    "base_url": "https://demo.nopcommerce.com/",
+    "title": "nopCommerce demo store",
+    "product": "lumia",
+    "product_name": "nokia lumia 1020",
+    "product_price": 349,
+    "currency": "$",
+    "purchase_unit": 3
+}

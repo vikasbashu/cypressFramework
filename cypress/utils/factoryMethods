@@ -1,0 +1,7 @@
+module.exports = {
+    toTitleCase(temp_str){
+        return temp_str.replace(/\w\S*/g, (str)=>{
+            return str[0].toUpperCase() + str.slice(1).toLowerCase();
+        })
+    }
+}
