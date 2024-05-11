@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^12.17.2",
-    "cypress-parallel": "^0.13.0"
+    "cypress-parallel": "^0.13.0",
+    "cypress-xpath": "^2.0.1"
   },
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.0",

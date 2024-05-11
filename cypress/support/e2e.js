@@ -20,7 +20,7 @@ import "cypress-mochawesome-reporter/register";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
+require('cypress-xpath');
 Cypress.on('uncaught:exception', (err, runnable, promise) => {
     // when the exception originated from an unhandled promise
     // rejection, the promise is provided as a third argument

@@ -15,4 +15,15 @@ flags:
 --record  : to record teh test run
 -r        : Mocha reporter
 -t        : run with tags
+
+if not exists (
+    select * 
+    from information_schema.columns
+    where table_name = "table_name"
+    and column_name = "column_name";
+)
+begin
+    alter table table_name
+    add column_name varchar(10);
+end;
     
