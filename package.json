@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cypress-xpath": "^2.0.1"
     "cypress": "^13.7.0",
     "cypress-parallel": "^0.13.0"
   },
