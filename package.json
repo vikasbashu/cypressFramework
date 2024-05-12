@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test_with_allure": "cypress run --env allure=true --browser firefox --spec cypress/e2e/UI-testing-random-sites/nopCommerceDemo.cy.js",
+    "test_with_allure": "cypress run --env allure=true --browser firefox --headless --spec cypress/e2e/ui/random/nopCommerceDemo.cy.js",
     "test_api": "cypress run --env allure=true --spec cypress/e2e/api/courseBay_backend_testing.cy.js"
   },
   "keywords": [],

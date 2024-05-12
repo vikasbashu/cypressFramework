@@ -9,12 +9,13 @@ module.exports = defineConfig({
    watchForFileChanges: true,
    video: true,
    trashAssetsBeforeRuns: false,
+   projectId: "nop451",
    env: {
     envName: "qa"
    },
   reporterOptions :{
     charts: true,
-    reportPageTitle: "custom-title",
+    reportPageTitle: "course-bay",
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
@@ -22,7 +23,7 @@ module.exports = defineConfig({
   },
   //chromeWebSecurity: false,
   e2e: {
-    baseUrl: "",
+    baseUrl: "https://www.nopcommerce.com/en/demo/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require("cypress-mochawesome-reporter/plugin")(on);
