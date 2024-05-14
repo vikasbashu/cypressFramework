@@ -26,7 +26,8 @@ flags:
 
 > --spec    : Specify which spec
 
-> -t        : run with tags
+> -e TAGS='@tagname' : run with tags
+Example: npx cypress run -e TAGS='@sanity' 
 
 
 > if not exists (
